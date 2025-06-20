@@ -134,7 +134,7 @@ REST_FRAMEWORK = {
 
 }
 SPECTACULAR_SETTINGS = {
-    'TITLE': 'p29 PDP Leaderboard',
+    'TITLE': 'Gayrat PDP Leaderboard',
     'DESCRIPTION': 'This project for pdp',
     'VERSION': '1.0.0',
     'SERVE_INCLUDE_SCHEMA': False,
