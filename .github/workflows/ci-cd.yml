@@ -29,6 +29,8 @@ jobs:
         env:
           DJANGO_SETTINGS_MODULE: root.settings
         run: |
+          python manage.py makemigrations
+          python manage.py migrate
           pytest
   build-and-deploy:
     runs-on: ubuntu-latest
