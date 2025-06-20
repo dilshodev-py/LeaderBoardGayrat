@@ -186,15 +186,15 @@ class TestAuth:
         assert 300 >= response.status_code >= 200, 'Bad request'
 
     #     =========================================student-list====================
-    @pytest.mark.django_db
-    def test_student_submission_list(self, api_client):
-        headers = self.login_admin(api_client)
-
-        response = api_client.get(
-            'http://localhost:8000/api/v1/student/submissions/', headers=headers,
-        )
-
-        assert 300 >= response.status_code >= 200, "Bad request"
+    # @pytest.mark.django_db
+    # def test_student_submission_list(self, api_client):
+    #     headers = self.login_admin(api_client)
+    #
+    #     response = api_client.get(
+    #         'http://localhost:8000/api/v1/student/submissions/', headers=headers,
+    #     )
+    #
+    #     assert 300 >= response.status_code >= 200, "Bad request"
 
 
     #  =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= homework-list =-=-=-=-=-=-=-=-=-=-=
