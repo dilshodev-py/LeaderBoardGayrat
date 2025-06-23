@@ -52,3 +52,9 @@ jobs:
             git remote remove origin || true
             git remote add origin https://github.com/dilshodev-py/LeaderBoardGayrat.git
             git pull origin master
+            make mig
+            systemctl restart leader_board.service
+            sudo systemctl enable nginx.service
+            sudo systemctl restart nginx.service
+            
+            
